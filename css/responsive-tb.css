@@ -1,0 +1,205 @@
+@media (max-width: 1024px) {
+  .header {
+    width: 1024px;
+    height: 69px;
+  }
+  .header-inner {
+    width: 624px;
+    height: 69px;
+  }
+  .header-inner .header-logo {
+    width: 139px;
+    height: auto;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .header-inner .contact-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 240px;
+    margin: 0 0 0 auto;
+  }
+  .header-inner .contact-wrapper .biz-hour {
+    font-size: 6px;
+  }
+  .header-inner .contact-wrapper .tel {
+    margin-top: 4px;
+  }
+  .header-inner .contact-wrapper .tel .phone {
+    width: 19px;
+  }
+  .header-inner .contact-wrapper .tel .number {
+    font-size: 14px;
+  }
+  .mv {
+    width: 1024px;
+    height: 502px;
+  }
+  .mv-inner .mv-ttl {
+    width: 54px;
+    height: 299px;
+    font-size: 15px;
+    margin-right: 32px;
+    padding-top: 16px;
+  }
+  .mv-inner .mv-ttl-02 {
+    width: 54px;
+    height: 299px;
+    font-size: 15px;
+    margin-right: 32px;
+    padding-top: 16px;
+  }
+  .mv-inner .mv-ttl-02 .orange {
+    margin: 8px 0;
+  }
+  .introduction-inner {
+    width: 625px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px 0 0 0;
+  }
+  .introduction-inner-left {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .introduction-inner-left .section-txt {
+    width: 100%;
+  }
+  .introduction-inner-right {
+    margin: 86px 0 43px 0;
+  }
+  .contents {
+    width: 1024px;
+    height: 2560px;
+  }
+  .contents-inner {
+    width: 819px;
+  }
+  .contents-inner .section-ttl {
+    font-size: 20px;
+  }
+  .contents-inner .contents-txt {
+    font-size: 12px;
+  }
+  .contents-inner .contents-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contents-inner .contents-wrap .medical-contents, .contents-inner .contents-wrap .medical-contents-02, .contents-inner .contents-wrap .medical-contents-03 {
+    width: 100%;
+    height: auto;
+  }
+  .contents-inner .contents-wrap .medical-contents .symptoms, .contents-inner .contents-wrap .medical-contents-02 .symptoms, .contents-inner .contents-wrap .medical-contents-03 .symptoms {
+    text-align: center;
+    width: 100%;
+  }
+  .contents-inner .contents-wrap .medical-contents-02 {
+    margin: 20px 0;
+  }
+  .contents .notice {
+    font-size: 20px;
+  }
+  .contents .notice-wrap {
+    width: 880px;
+  }
+  .contents .notice-wrap-item, .contents .notice-wrap-item-02, .contents .notice-wrap-item-03, .contents .notice-wrap-item-04 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 120px;
+    margin: 0;
+  }
+  .contents .notice-wrap .all-look-box {
+    bottom: 80px;
+    right: 60px;
+  }
+  .footer {
+    width: 1024px;
+    height: auto;
+  }
+  .footer-inner {
+    width: 819px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-inner .footer-left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 60px;
+    width: 500px;
+  }
+  .footer-inner .footer-right {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .footer-inner .footer-right .footer-logo {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .footer-inner .footer-right .tel {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-inner .footer-right .open-wrap {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-inner .footer-right .close-wrap {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 224px;
+  }
+  .footer-inner .footer-right .close-wrap-time {
+    width: 84.5px;
+    padding-right: 0;
+  }
+  .footer-inner .footer-right .all-right {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=responsive-tb.css.map */

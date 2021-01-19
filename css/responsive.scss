@@ -1,0 +1,663 @@
+$sp: 375px;
+$tb: 768px;
+$lptp: 1024px;
+$pc: 1920px;
+$lgpc: 2560px;
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+    @content;
+    }
+}
+
+@mixin tb {
+    @media (max-width: ($tb)) {
+        @content;
+    }
+}
+
+@mixin lptp {
+    @media (max-width: ($lptp)) {
+        @content;
+    }
+}
+
+@mixin lgpc {
+    @media (min-width: (1921px)) {
+        @content; 
+    }
+}
+
+.header {
+    @include lgpc {
+        width: 100vw;
+        height: 24vh;
+    }
+    @include lptp {
+        height: 69px;
+    }
+    @include sp {
+        height: 70px;
+    }
+    &-inner {
+        @include lgpc {
+            width: 70vw;
+            height: 24vh;
+        }
+        @include lptp {
+            width: 70vw;
+            height: 69px;
+        }
+        @include sp {
+            width: 90vw;
+            height: 70px;
+        }
+        .header-logo {
+            @include lgpc {
+                width: 19vw;
+            }
+            @include lptp {
+                width: 139px;
+                height: auto;
+                margin: 0;
+                display: flex;
+                align-self: center;
+            }
+            @include sp {
+                width: 120px;
+            }
+        }
+        .contact-wrapper {
+            @include lgpc {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 0 0 auto;
+                width: 24vw;
+            }
+            @include lptp {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 0 0 auto;
+                width: 30vw;
+            }
+            @include sp {
+                width: 46vw;
+            }
+            .biz-hour {
+                @include lgpc {
+                    height: 6vh;
+                    line-height:  6vh;
+                    font-size: 22px;
+                }
+                @include lptp {
+                    font-size: 6px;
+                }
+                @include sp {
+                    font-size: 12px;
+                    text-align: right;
+                }
+            }
+            .tel {
+                @include lgpc {
+                    height: 6vh;
+                }
+                @include lptp {
+                    margin-top: 4px;
+                }
+                @include sp {
+                    margin: 0;
+                }
+                .phone {
+                    @include lgpc {
+                        width: 36px;
+                    }
+                    @include lptp {
+                        width: 14px;
+                    }
+                    @include sp {
+                        width: 16px;
+                    }
+                }
+                .number {
+                    @include lgpc {
+                        font-size: 40px;
+                    }
+                    @include lptp {
+                        font-size: 14px;
+                    }
+                    @include sp {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+.mv {
+    @include lgpc {
+        width: 100vw;
+        height: 180vh;
+    }
+    @include lptp {
+        width: 100vw;
+        height: 502px;
+    }
+    @include sp {
+        height: 440px;
+    }
+    &-inner {
+        .mv-ttl {
+            @include lgpc {
+                width: 6vw;
+                height: 96vh;
+                font-size: 40px;
+                padding-top: 7vh;
+            }
+            @include lptp {
+                width: 54px;
+                height: 299px;
+                font-size: 15px;
+                margin-right: 32px;
+                padding-top: 16px;
+            }
+            @include sp {
+                width: 42px;
+                height: 250px;
+                font-size: 14px;
+                margin-right: 24px;
+            }
+        }
+        .mv-ttl-02 {
+            @include lgpc {
+                width: 6vw;
+                height: 96vh;
+                font-size: 40px;
+                padding-top: 7vh;
+            }
+            @include lptp {
+                width: 54px;
+                height: 299px;
+                font-size: 15px;
+                margin-right: 32px;
+                padding-top: 16px;
+            }
+            @include sp {
+                width: 42px;
+                height: 270px;
+                font-size: 14px;
+                margin-right: 24px;
+                margin-top: 40px;
+            }
+            .orange {
+                @include lptp {
+                    margin: 8px 0;
+                }
+                @include sp {
+                    margin: 3px 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.introduction {
+    @include lgpc {
+        width: 100vw;
+        height: 100vh;
+    }
+    &-inner {
+        @include lgpc {
+            width: 1400px;
+            height: 100vh;
+        }
+        @include lptp {
+            width: 80vw;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            padding: 10% 0 0 0; //padding-left打ち消し
+        }
+        @include sp {
+            width: 90vw;
+        }
+        &-left {
+            @include lgpc {
+                width: 1000px;
+            }
+            @include lptp {
+                text-align: center;
+                margin: 0 auto;
+            }
+            @include tb {
+                width: 80vw;
+            }
+            @include sp {
+                width: 100%;
+            }
+            .section-ttl,.section-ttl-02 {
+                @include lgpc {
+                    font-size: 36px;
+                }
+                @include tb {
+                    margin-right: 10%;
+                    margin-left: 10%;
+                    font-size: 20px;
+                }
+                @include sp {
+                    font-size: 18px;
+                }
+            }
+            .section-ttl-02 {
+                @include lgpc {
+                    margin-top: 7vh;
+                }
+                @include sp {
+                    margin-top: 20px;
+                }
+            }
+            .section-txt {
+                @include lgpc {
+                    margin-top: 7vh;
+                    font-size: 20px;
+                    width: 100%;
+                }
+                @include lptp {
+                    width: 100%;
+                }
+                @include tb {
+                    font-size: 14px;
+                }
+                @include sp {
+                    font-size: 12px;
+                    margin-top: 32px;
+                }
+            } 
+        }
+        &-right {
+            @include lptp {
+                margin: 86px 0 43px 0;
+            }
+            @include tb {
+                margin: 0;
+                padding: 10%;
+            }
+            @include sp {
+                padding: 6%;
+            }
+        }
+    }
+}
+.contents {
+    @include lgpc {
+        width: 100vw;
+        height: auto;
+    }
+    @include lptp {
+        width: 100vw;
+        height: auto;
+    }
+    @include tb {
+        margin: 0 auto;
+    }
+    &-inner {
+        @include lgpc {
+            width: 70vw;
+            padding-bottom: 16vh;
+        }
+        @include lptp {
+            width: 80vw;
+            padding-bottom: 10%;
+        }
+        @include tb {
+            width: 90vw;
+        }
+        @include sp {
+            width: 90vw;
+        }
+        .section-ttl {
+            @include lgpc {
+                font-size: 36px;
+                margin-top: 100px;
+            }
+            @include lptp {
+                font-size: 20px;
+            }
+            @include tb {
+                margin-top: 54px;
+            }
+            @include sp {
+                margin-top: 40px;
+            }
+        }
+        .contents-txt {
+            @include lgpc {
+                margin-top: 100px;
+                font-size: 22px;
+            }
+            @include lptp {
+                font-size: 12px;
+            }
+            @include tb {
+                margin-top: 54px;
+            }
+            @include sp {
+                width: 56vw;
+                margin: 0 auto;
+                font-size: 14px;
+                margin-top: 40px;
+            }
+        }
+        .contents-wrap {
+            @include lgpc {
+                margin-top: 6vh;
+            }
+            @include lptp {
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            @include tb {
+                align-items: center;
+            }
+            .medical-contents,.medical-contents-02,.medical-contents-03 {
+                @include lgpc {
+                    width: 20vw;
+                    height: auto;
+                    .symptoms {
+                        font-size: 0.8vw;
+                    }
+                    &-img {
+                        width: 10vw;
+                    }
+                }
+                @include lptp {
+                    width: 100%;
+                    height: auto;
+                    .symptoms {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+                @include tb {
+                    width: 80%;
+                    .medical-contents-ttl {
+                        font-size: 20px;
+                        margin-top: 30px;
+                    }
+                    .symptoms {
+                        font-size: 14px;
+                        margin-top: 35px;
+                    }
+                }
+                @include sp {
+                    .medical-contents-ttl {
+                        font-size: 18px;
+                    }
+                    .symptoms {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .medical-contents-02 {
+                @include lptp {
+                    margin: 20px 0;
+                }
+            }
+        }
+        .notice {
+            @include lgpc {
+                font-size: 32px;
+                margin-top: 13vh;
+            }
+            @include lptp {
+                font-size: 20px;
+            }
+            @include tb {
+                margin-top: 70px;
+            }
+            @include sp {
+                margin-top: 50px;
+            }
+        }
+        .notice-wrap {
+            @include lgpc {
+                margin-top: 13vh;
+                width: 70vw;
+                height: 54vh;
+            }
+            @include lptp {
+                width: 90vw;
+                height: 600px;
+                padding: 4% 5% 15% 5%;
+            }
+            @include tb {
+                margin: 50px auto 0 auto;
+            }
+            @include sp {
+                height: 540px;
+            }
+            &-item,&-item-02,&-item-03,&-item-04 {
+                @include lgpc {
+                    height: 6vh;
+                    &-date {
+                        font-size: 0.9vw;
+                    }
+                    &-type {
+                        width: 4vw;
+                        height: 4vh;
+                        line-height: 4vh;
+                        font-size: 0.7vw;
+                    }
+                    &-contents {
+                        font-size: 0.9vw;
+                    }
+                }
+                @include lptp {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    height: 120px;
+                    margin: 0;
+                    &-date,&-type {
+                        margin: 0;
+                    }
+                }
+                @include sp {
+                    height: auto;
+                    padding-bottom: 5px;
+                    &-date {
+                        margin-top: 10px;
+                    }
+                    &-type {
+                        margin-top: 10px;
+                    }
+                    &-contents {
+                        margin-top: 10px;
+                        line-height: 1.4;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .all-look-box {
+                @include lgpc {
+                    font-size: 0.9vw;
+                    bottom: 10vh;
+                    right: 4vw;
+                }
+                @include lptp {
+                    bottom: 12%;
+                    right: 8%;
+                }
+                @include tb {
+                    bottom: 10%;
+                }
+                @include sp {
+                    font-size: 14px;
+                    bottom: 7%;
+                }
+            }
+        }
+    }
+}
+.footer {
+    @include lgpc {
+        width: 100vw;
+    }
+    @include lptp {
+        width: 1024px;
+        height: 960px;
+    }
+    @include tb {
+        width: 768px;
+        height: 910px;
+    }
+    @include sp {
+        width: 375px;
+        height: 678px;
+    }
+    &-inner {
+        @include lptp {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include tb {
+            width: 100%;
+        }
+        @include sp {
+            width: 90vw;
+        }
+        .footer-left {
+            @include lptp {
+                flex: 1;
+                margin-top: 60px;
+                width: 100%;
+            }
+            @include tb {
+                width: 90%;
+            }
+        }
+        .footer-right {
+            @include lptp {
+                text-align: center;
+                margin: 0;
+                width: 90%;
+            }
+            @include sp {
+                width: 100%;
+            }
+            .footer-logo {
+                @include lptp {
+                    margin: 0 auto;
+                    margin-top: 60px;
+                }
+                @include tb {
+                    margin-top: 40px;
+                }
+                @include sp {
+                    width: 180px;
+                    margin-top: 30px;
+                }
+            }
+            .postal-code {
+                @include tb {
+                    margin-top: 18px;
+                }
+                @include sp {
+                    margin-top: 14px;
+                    font-size: 16px;
+                }
+            }
+            .address {
+                @include tb {
+                    margin-top: 18px;
+                }
+                @include sp {
+                    margin-top: 14px;
+                    font-size: 16px;
+                }
+            }
+            .tel {
+                @include lptp {
+                    justify-content: center;
+                }
+                @include tb {
+                    margin-top: 18px;
+                }
+                @include sp {
+                    .phone {
+                        width: 20px;
+                    }
+                    .number {
+                        font-size: 22px;
+                    }
+                }
+            }
+            .open-wrap {
+                @include lptp {
+                    width: 100%;
+                    justify-content: center;
+                }
+                @include tb {
+                    margin-top: 22px;
+                    font-size: 13px;
+                }
+                @include sp {
+                    width: 100%;
+                    font-size: 13px;
+                    &-time {
+                        width: 60px;
+                        padding-right: 6px;
+                    }
+                    .open-day {
+                        &-list,&-am,&-pm {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+            .close-wrap {
+                @include lptp {
+                    width: 100%;
+                    justify-content: center;
+                    padding-right: 224px; //位置合わせ(このやり方二度と使わない)
+                }
+                @include tb {
+                    font-size: 12px;
+                    padding-right: 196px;
+                }
+                @include sp {
+                    width: 100%;
+                    font-size: 13px;
+                    margin-top: 0;
+                    justify-content: flex-start;
+                    padding: 0 0 19px 7px;
+                }
+                &-time {
+                    @include lptp {
+                        width: 80px;
+                        padding-right: 0;
+                    }
+                    @include sp {
+                        padding-right: 7px;
+                    }
+                }
+                &-day {
+                    @include sp {
+                        width: 100%;
+                    }
+                }
+            }
+            .all-right {
+                @include lptp {
+                    text-align: center;
+                }
+                @include sp {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
