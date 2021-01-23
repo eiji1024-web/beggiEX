@@ -47,8 +47,7 @@
 @media (max-width: 1024px) {
   .header-inner .header-logo {
     width: 139px;
-    height: auto;
-    margin: 0;
+    max-width: 139px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
